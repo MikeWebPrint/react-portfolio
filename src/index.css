@@ -1,8 +1,8 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* margin: 0; */
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +10,319 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* Custom variables */
+:root {
+  --primary-color: #154D79;
+  --secondary-color: #BC3316;
+  --accent-color: #F4D561; 
+  --primary-tint: #266291;
+  --primary-tint2: #8DB3D1;
+  --primary-tint3: #487CA3;
+  --primary-tint4: #104670;
+  --primary-tint5: #042B49;
+  --primary-tint6: #8CC3EE;
+  --primary-tint7: #edf6fe;
+  --light: var(--primary-tint7);
+  --dark: var(--primary-tint5);
+  --white: #e7f0f1;
+  --gray: #464646;
+  --light-gray: #bababa;
+}
+/* Set scroll behavior and root font size */
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+/* set foundational layout and text styles */
+body {
+  min-height: 100%;
+  line-height: 1.375;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 400;
+  background: var(--primary-tint7);
+  color: var(--dark);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+} 
+/* Common styles for the header and footer */
+header, footer {
+  width: 100%;
+  background-color: var(--gray);
+  min-height: 2rem;
+  color: var(--white);
+  padding: .5rem;
+}
+/* Particular styles for the header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 1rem;
+  text-align: right;
+  border-bottom: var(--accent-color) solid 6px;
+}
+/* Overriding the font size for the H1 */
+header h1 {
+  font-size: 1.5rem;
+}
+/* Base styles for my pic */
+.avatar{
+  border: solid 3px var(--dark);
+  border-radius: 50%;
+  width: 10rem;
+  margin: 0 2rem;
+  position: relative;
+  top: -50%;
+}
+/* Particular styles for the footer */
+footer {
+  bottom: 0;
+  text-align: center;
+  border-top: var(--accent-color) solid 6px;
+}
+/* style and behavior of navigation ul */
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-weight: 300;
+  gap: 1rem;
+}
+/* Push the ul in the header to the right */
+header ul {
+  justify-content: flex-end;
+}
+/* Base style for links in navigation */
+nav a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+/* Override default browser colors on links */
+a:link, a:visited {
+  color: inherit;
+}
+/* Link display styles on hover, active, and focus */
+a:hover, a:active, a:focus {
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+  text-decoration-style: dashed;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+  transform: scale(1.01);
+  display: inline-block;
+  background-color: var(--accent-color);
+  padding: 0 .25rem;
+  color: var(--dark);
+  font-weight: 500;
+  transition: all .2s linear,  text-decoration-color 0s;
+}
+/* Transition settings for leaving hover state */
+a {
+  transition: all .2s linear, text-decoration-color 0s;
+}
+/* Base styles for the hero */
+.hero {
+  background-image: url('./images/concrete.jpg');
+  height: 8vh;
+  min-height: 5rem;
+  background-position:center;
+  background-size: cover;
+}
+/* Layout of the main section */
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 3rem 1rem 1rem;
+  height: 100%;
+  flex: 100%;
+}
+/* Following styles impose my will on heading and paragraph type */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .75em;
+}
+p {
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+h5, h6 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+/* Define the layout of the portfolio section titles and content */
+section.portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+}
+section.portfolio h3 {
+  flex: 33.33% 0 0;
+}
+section.portfolio .card-row {
+  flex: 66.66% 1 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+/* Common attributes for portfolio cards */
+.card {
+  border: solid var(--light-gray) 1px;
+  border: solid var(--primary-tint3) 1px;
+  border-radius: 2px;
+  flex: 1 0 40%;
+  height: 30vh;
+  background-color: var(--primary);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/* color overlay on cards */
+.card::before {
+  content: " ";
+  background-color: var(--dark);
+  opacity: .6;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: all .2s linear;
+}
+/* Lighten the color overlay on hover etc. */
+.card:hover::before, .card:active::before, .card:focus::before {
+  opacity: .15;
+  transition: all .2s linear;
+}
+/* Make the first portfolio item larger than the others */
+.card:first-child {
+  flex-basis: 100%;
+}
+.card:nth-child(n+2) {
+  max-width: 50%;
+}
+/* Card caption styles */
+.card-caption {
+  content: attr(caption);
+  position: relative;
+  display: inline-block;
+  top: 19vh;
+  left: -10px;
+  background: var(--accent-color);
+  padding: .5rem 1rem;
+  z-index: 15;
+  box-shadow: var(--gray) 3px 3px 10px;
+}
+/* Shadow styles on active portfolio cards */
+.card:hover, .card:active, .card:focus {
+  box-shadow: var(--light-gray) 3px 3px 10px;
+}
+/* Portfolio cards background images*/
+#Horiseon {
+  background-image: url("./images/webdev/Horiseon-SEO-Services-Home.png");
+}
+#cbd {
+  background-image: url("./images/webdev/QSCBD-Home.png");
+}
+#acup {
+  background-image: url('./images/webdev/acupuncture-Home.png');
+}
+#temo {
+  background-image: url('./images/webdev/temo.png');
+}
+#warehouse {
+  background-image: url('./images/webdev/warehouse.png');
+}
+#SalemTour {
+  background-image: url("./images/print-graphics/Salem-brochure.jpg");
+}
+#SalemHeritage {
+  background-image: url("./images/print-graphics/Salem-Heritage-Day-broch.jpg");
+}
+#starbrite {
+  background-image: url("./images/print-graphics/Def-SLS22-sponsorbanners-starbrite.jpg");
+}
+#tohatsu {
+  background-image: url("./images/print-graphics/Def-SLS22-sponsorbanners-tohatsu.jpg");
+}
+#boat-show-power {
+  background-image: url("./images/web-email-graphics/boat-show-power.jpg");
+}
+#boat-show-sail {
+  background-image: url("./images/web-email-graphics/boat-show-sail.jpg");
+}
+#rotators {
+  background-image: url("./images/web-email-graphics/cut-goods_22A.jpg");
+}
+/* #elec-deals {
+  background-image: url("./images/web-email-graphics/elec-deals.jpg");
+} */
+#MemDay {
+  background-image: url("./images/web-email-graphics/Mem-Day-Sale-cover.jpg");
+}
+#filmfindr {
+  background-image: url("./images/webdev/FilmFindrapp.jpg")
+}
+#jsquiz {
+  background-image: url("./images/webdev/jsquiz.png");
+}
+#weather-app {
+  background-image: url("./images/webdev/weather-app.png");
+}
+#thevenue {
+  background-image: url("./images/webdev/The-Venue.png");
+}
+
+/* I created this page desktop-first, but responsive, and this media query applies different styles to certain elements to make the layout look good at smaller screen widths. */
+@media screen and (max-width: 700px) {
+  /* header and nav changes flex direction and collapses to column */
+  header, footer {
+    padding: 1rem;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav li {
+    margin: .25rem;
+  }
+  section.portfolio h3 {
+    flex: 100% 0 0;
+  }
+  .card {
+    flex-basis: 100%;
+  }
+  .card:nth-child(n+2) {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .card:first-child {
+    height: 35vh;
+  }
+  .card:first-child .card-caption {
+    top: 25vh;
+  }
 }
