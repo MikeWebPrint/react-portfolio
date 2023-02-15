@@ -1,13 +1,12 @@
 import React from 'react';
-const currentYear = new Date().getFullYear()
+import {useState} from 'react';
+const getCurrentYear = new Date().getFullYear();
 
-const Footer = () => {
-  return (<footer>
-&copy; <span id='currentYear'></span> Mike Johnson
-<script>
-  document.getElementById('currentYear').textContent = currentYear
-</script>
+const InfoFooter = () => {
+  const [currentYear, setcurrentYear] = useState(()=> getCurrentYear)
+  return (
+  <footer>&copy; {currentYear} Mike Johnson
 </footer>)
 }
 
-export default Footer
+export default InfoFooter

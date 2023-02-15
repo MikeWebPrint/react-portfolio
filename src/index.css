@@ -1,3 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  text-align: left;
+
+}
+
+body {
+  min-height: 100%;
+  line-height: 1;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  text-align: left;
+}
+
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+
+
 body {
   /* margin: 0; */
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -35,7 +83,7 @@ html {
   font-size: 18px;
 }
 /* set foundational layout and text styles */
-body {
+#root {
   min-height: 100%;
   line-height: 1.375;
   font-family: 'Bai Jamjuree', sans-serif;
@@ -76,6 +124,7 @@ header h1 {
   margin: 0 2rem;
   position: relative;
   top: -50%;
+  
 }
 /* Particular styles for the footer */
 footer {
@@ -131,6 +180,7 @@ a {
   min-height: 5rem;
   background-position:center;
   background-size: cover;
+  text-align: left;
 }
 /* Layout of the main section */
 main {
@@ -139,6 +189,8 @@ main {
   padding: 3rem 1rem 1rem;
   height: 100%;
   flex: 100%;
+  /* text-align: left; */
+
 }
 /* Following styles impose my will on heading and paragraph type */
 h1, h2, h3, h4, h5, h6 {
@@ -146,6 +198,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
   margin-bottom: 1rem;
+  text-align: left;
 }
 h1 {
   font-size: 3rem;

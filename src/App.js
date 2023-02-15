@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/Header'
-import Footer from './components/Footer'
+import Hero from './components/Hero'
+import InfoFooter from './components/Footer'
 import About from './components/About';
 import Contact from './components/Contact'
 import Graphics from './components/Graphics'
@@ -11,14 +12,15 @@ import './index.css'
 function App() {
   return (
     <div className="App">
-      <main>
         <Header />
+        <Hero />
+      <main>
         <About />
         <Development />
         <Graphics />
         <Print />
         <Contact />
-        <Footer />
+        <InfoFooter />
       </main>
     </div>
   );
