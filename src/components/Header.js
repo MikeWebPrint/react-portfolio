@@ -1,4 +1,5 @@
 import  React from 'react';
+let pathname = window.location.pathname
 
 const Header = () => {
    return ( 
@@ -6,11 +7,18 @@ const Header = () => {
       <h1>Mike Johnson</h1>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#dev">WebDev</a></li>
-          <li><a href="#web-email-graphics">Web Design</a></li>
-          <li><a href="#print">Print Design</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a 
+          href="/"
+          className={pathname === '/' ? 'current' : ''}
+          >About</a></li>
+          <li><a 
+          href="/Portfolio"
+          className={pathname === '/Portfolio' ? 'current' : ''}
+          >Portfolio</a></li>
+          <li><a 
+          href="/Contact"
+          className={pathname === '/Contact' ? 'current' : ''}
+          >Contact</a></li>
         </ul>
       </nav>
        </header>

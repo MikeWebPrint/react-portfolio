@@ -1,30 +1,41 @@
-import './App.css';
+// import './App.css';
 import Header from './components/Header'
 import Hero from './components/Hero'
 import InfoFooter from './components/Footer'
-import About from './components/About';
-import Contact from './components/Contact'
-import ContactForm from './components/ContactForm'
-import Graphics from './components/Graphics'
-import Print from './components/Print'
-import Development from './components/Development';
+import AboutPage from './pages/AboutPage';
+import Portfolio from './pages/PortfolioPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ContactPage from './pages/ContactPage'
+
 import './index.css'
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
         <Header />
         <Hero />
-      <main>
-        <About />
-        <Development />
-        <Graphics />
-        <Print />
-        <Contact />
-        <ContactForm />
+        <main>
+        <Routes>
+          <Route
+            path = '/Contact'
+            element= {<ContactPage />}>
+          </Route>
+          <Route
+            path = '/'
+            element= {<AboutPage />}>
+          </Route>
+          <Route
+          path='/Portfolio'
+          element={<Portfolio />}>
+
+          </Route>
+        </Routes>
+        </main>
         <InfoFooter />
-      </main>
-    </div>
+
+      </div>
+    </Router>
   );
 }
 

@@ -52,35 +52,61 @@ function ContactForm() {
   return (
     <div>
       <h3>
-        Contact Me!
+        Find Me Here:
       </h3>
+      <section id="contact">
+    {/* <h3>Contact Me</h3> */}
+    <nav>
+    {/* <ul>
+        <li>Github: <a href="https://github.com/MikeWebPrint" target="_blank" rel="noreferrer">github.com/MikeWebPrint</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/mike-johnson-25b08836/" target="_blank" rel="noreferrer">mike-johnson-25b08836</a></li>
+        <li><a href="https://painted-temple-59f.notion.site/Resume-67dc4fd6d2af4e4c988a9541d12dbb86" target="_blank" rel="noreferrer">View Current Resume</a></li>
+        <li>Email: <a href="mailto:mikewebprint@gmail.com">MikeWebPrint@gmail.com</a></li>
+        <li>Phone: <a href="tel:18603815470">860.381.5470</a></li>
+      </ul> */}
+        <p>Github: <a href="https://github.com/MikeWebPrint" target="_blank" rel="noreferrer">github.com/MikeWebPrint</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mike-johnson-25b08836/" target="_blank" rel="noreferrer">mike-johnson-25b08836</a></p>
+        <p><a href="https://painted-temple-59f.notion.site/Resume-67dc4fd6d2af4e4c988a9541d12dbb86" target="_blank" rel="noreferrer">View Current Resume</a></p>
+        <p>Email: <a href="mailto:mikewebprint@gmail.com">MikeWebPrint@gmail.com</a></p>
+        <p>Phone: <a href="tel:18603815470">860.381.5470</a></p>
+    </nav>
+  </section>
+  <h3>Contact me for more info</h3>
       <form className="form">
-        <label htmlFor='name'>Name</label>
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Name"
-          required
-        />
-        <label htmlFor='email'>Email</label>
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="Email Address"
-          required
-        />
-        <label htmlFor='message'>Message</label>
-        <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="textarea"
-          placeholder="Message"
-        />
+        <div>
+          <label htmlFor='name'>Name *</label><br />
+          <input
+            value={name}
+            name="name"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div>
+        <label htmlFor='email'>Email *</label><br />
+          <input
+            value={email}
+            name="email"
+            onChange={handleInputChange}
+            type="email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor='message'>Message </label><br />
+          <textarea
+            value={message}
+            name="message"
+            onChange={handleInputChange}
+            cols="75"
+            rows="10"
+            // type="textarea"
+            placeholder="Message"
+          />
+        </div>
         <button type="button" onClick={handleFormSubmit}>
           Submit
         </button>
