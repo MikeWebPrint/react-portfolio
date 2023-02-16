@@ -4,10 +4,10 @@ import Print from '../components/Print';
 
 function Portfolio() {
   return (
-  <>
-                <Development />
-              <Graphics />
-              <Print />
+    <>
+      <Development />
+      <Graphics />
+      <Print />
     </>
   );
 }
