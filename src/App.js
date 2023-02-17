@@ -18,15 +18,15 @@ function App() {
         <main>
         <Routes>
           <Route
-            path = '/Contact'
+            path = '/react-portfolio/Contact'
             element= {<ContactPage />}>
           </Route>
           <Route
-            path = '/'
+            path = '/react-portfolio'
             element= {<AboutPage />}>
           </Route>
           <Route
-          path='/Portfolio'
+          path='/react-portfolio/Portfolio'
           element={<Portfolio />}>
 
           </Route>

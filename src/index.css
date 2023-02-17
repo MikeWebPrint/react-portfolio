@@ -9,9 +9,6 @@ html {
   text-align: left;
 
 }
-/* #root {
-  height: 100%;
-} */
 
 body {
   height: 100%;
@@ -196,7 +193,7 @@ a, a.current {
 }
 /* Layout of the main section */
 main {
-  margin: 0 auto 3rem;
+  margin: 0 auto 5rem;
   max-width: 1200px;
   padding: 3rem 1rem 1rem;
   height: 100%;
