@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.4f0b6a35.css",
-    "main.js": "/react-portfolio/static/js/main.b0ae07fe.js",
+    "main.css": "/react-portfolio/static/css/main.1603ca12.css",
+    "main.js": "/react-portfolio/static/js/main.e758da9f.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/Mem-Day-Sale.pdf": "/react-portfolio/static/media/Mem-Day-Sale.1cf4923ce1928a34d3c0.pdf",
     "static/media/Salem-Heritage-Day-broch.pdf": "/react-portfolio/static/media/Salem-Heritage-Day-broch.886297529f74de586ac2.pdf",
@@ -29,12 +29,12 @@
     "static/media/weather-app.png": "/react-portfolio/static/media/weather-app.b3b7b397618c7c9aa15b.png",
     "static/media/jsquiz.png": "/react-portfolio/static/media/jsquiz.390765643f88615eb22e.png",
     "index.html": "/react-portfolio/index.html",
-    "main.4f0b6a35.css.map": "/react-portfolio/static/css/main.4f0b6a35.css.map",
-    "main.b0ae07fe.js.map": "/react-portfolio/static/js/main.b0ae07fe.js.map",
+    "main.1603ca12.css.map": "/react-portfolio/static/css/main.1603ca12.css.map",
+    "main.e758da9f.js.map": "/react-portfolio/static/js/main.e758da9f.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f0b6a35.css",
-    "static/js/main.b0ae07fe.js"
+    "static/css/main.1603ca12.css",
+    "static/js/main.e758da9f.js"
   ]
 }
