@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.4f0b6a35.css",
-    "main.js": "/react-portfolio/static/js/main.29ac7b3b.js",
+    "main.js": "/react-portfolio/static/js/main.1f93e223.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/Mem-Day-Sale.pdf": "/react-portfolio/static/media/Mem-Day-Sale.1cf4923ce1928a34d3c0.pdf",
     "static/media/Salem-Heritage-Day-broch.pdf": "/react-portfolio/static/media/Salem-Heritage-Day-broch.886297529f74de586ac2.pdf",
@@ -30,11 +30,11 @@
     "static/media/jsquiz.png": "/react-portfolio/static/media/jsquiz.390765643f88615eb22e.png",
     "index.html": "/react-portfolio/index.html",
     "main.4f0b6a35.css.map": "/react-portfolio/static/css/main.4f0b6a35.css.map",
-    "main.29ac7b3b.js.map": "/react-portfolio/static/js/main.29ac7b3b.js.map",
+    "main.1f93e223.js.map": "/react-portfolio/static/js/main.1f93e223.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f0b6a35.css",
-    "static/js/main.29ac7b3b.js"
+    "static/js/main.1f93e223.js"
   ]
 }
