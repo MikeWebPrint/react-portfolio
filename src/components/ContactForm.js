@@ -72,7 +72,7 @@ function ContactForm() {
     </nav>
   </section>
   <h3>Contact me for more info</h3>
-      <form className="form">
+      <form className="form" action="https://submit-form.com/BHqExEtM">
         <div>
           <label htmlFor='name'>Name *</label><br />
           <input
@@ -107,7 +107,7 @@ function ContactForm() {
             placeholder="Message"
           />
         </div>
-        <button type="button" onClick={handleFormSubmit}>
+        <button type="submit" onClick={handleFormSubmit}>
           Submit
         </button>
       </form>
