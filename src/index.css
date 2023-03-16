@@ -374,6 +374,9 @@ section.portfolio .card-row {
 #thevenue {
   background-image: url("./images/webdev/The-Venue.png");
 }
+#inspirations {
+  background-image: url("./images/webdev/inspirations-screenshot.png")
+}
 
 /* I created this page desktop-first, but responsive, and this media query applies different styles to certain elements to make the layout look good at smaller screen widths. */
 @media screen and (max-width: 700px) {
@@ -404,4 +407,8 @@ section.portfolio .card-row {
   .card:first-child .card-caption {
     top: 25vh;
   }
+}
+
+.d-none {
+  display: none;
 }

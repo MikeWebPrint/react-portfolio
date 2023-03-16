@@ -27,14 +27,14 @@ let printCards = [
   },
 ]
 const Print = () => {
-  return (<section id="print" class="portfolio">
+  return (<section id="print" className="portfolio">
     <h3>
       Print Design
     </h3>
     <div className="card-row">
       {
         printCards.map(({ id, url, caption }) => {
-          return <PortfolioCard id={id} url={url} caption={caption} />
+          return <PortfolioCard key={id} id={id} url={url} caption={caption} />
         })
       }
     </div>

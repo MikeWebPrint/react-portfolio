@@ -2,7 +2,10 @@ import React from 'react'
 import { useState } from 'react'
 // Here we import a helper function that will check if the email is valid
 import { validateEmail } from '../utils/helpers';
-
+import Botpoison from "@botpoison/browser";
+const botpoison = new Botpoison({
+  publicKey: "pk_b9b027dd-3a45-4dc1-9a0e-081957e1a66c"
+});
 
 function ContactForm() {
   // Here we set two state variables for firstName and lastName using `useState`
@@ -10,6 +13,7 @@ function ContactForm() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const FORMSPARK_ACTION_URL = "https://submit-form.com/BHqExEtM";
 
 
   const handleInputChange = (e) => {
@@ -28,7 +32,7 @@ function ContactForm() {
     }
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
@@ -42,11 +46,25 @@ function ContactForm() {
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
       return;
     }
+    const { solution } = await botpoison.challenge();
+    await fetch(FORMSPARK_ACTION_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        name, 
+        email,
+        message,
+        _botpoison: solution,
+      }),
+    });
     // Clear the inputs
     setName('');
     setEmail('');
     setMessage('');
-    setErrorMessage('');
+    setErrorMessage('Form Submitted');
   };
 
   return (
@@ -72,7 +90,7 @@ function ContactForm() {
     </nav>
   </section>
   <h3>Contact me for more info</h3>
-      <form className="form" action="https://submit-form.com/BHqExEtM">
+      <form className="form" onSubmit={handleFormSubmit} action="https://formsubmit.io/send/c1add0ef-ce70-4861-9fa0-85309be78826" method="POST">
         <div>
           <label htmlFor='name'>Name *</label><br />
           <input
@@ -83,6 +101,7 @@ function ContactForm() {
             placeholder="Name"
             required
           />
+          <input name="_formsubmit_id" type="text" className='d-none'></input>
         </div>
         <div>
         <label htmlFor='email'>Email *</label><br />

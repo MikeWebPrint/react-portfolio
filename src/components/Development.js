@@ -2,6 +2,11 @@ import React from 'react';
 import PortfolioCard from './PortfolioCard'
 let developmentCards = [
   {
+    id: "inspirations",
+    url: "https://af-ls-mj-sg-dp-proj-3.herokuapp.com/",
+    caption: "Inspirations / React, GraphQL, Express, Node, Flickr API"
+  },
+  {
     id: "thevenue",
     url: "https://the-venue.herokuapp.com/spotify",
     caption: "The Venue App / JS, Node, Express, Handlebars, Spotify API, SCSS"
@@ -34,12 +39,12 @@ let developmentCards = [
 ]
 
 const Development = () => {
-  return (<section id="dev" class="portfolio">
+  return (<section id="dev" className="portfolio">
     <h3>Web Development</h3>
     <div className="card-row">
       {
         developmentCards.map(({ id, url, caption }) => {
-          return <PortfolioCard id={id} url={url} caption={caption} />
+          return <PortfolioCard key={id} id={id} url={url} caption={caption} />
         })
       }
     </div>

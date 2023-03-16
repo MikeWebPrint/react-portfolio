@@ -28,14 +28,14 @@ let graphicsCards = [
 ];
 
 const Graphics = () => {
-  return (<section id="web-email-graphics" class="portfolio">
+  return (<section id="web-email-graphics" className="portfolio">
 <h3>
   Web Graphics & Email Campaigns
 </h3>
 <div className="card-row">
   {
         graphicsCards.map(({ id, url, caption }) => {
-          return <PortfolioCard id={id} url={url} caption={caption} />
+          return <PortfolioCard key={id} id={id} url={url} caption={caption} />
         })
       }
 </div>
