@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.3f24f77f.css",
-    "main.js": "/react-portfolio/static/js/main.eaf6f36d.js",
+    "main.css": "/react-portfolio/static/css/main.ba079bf3.css",
+    "main.js": "/react-portfolio/static/js/main.d6613b74.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/Mem-Day-Sale.pdf": "/react-portfolio/static/media/Mem-Day-Sale.1cf4923ce1928a34d3c0.pdf",
     "static/media/Salem-Heritage-Day-broch.pdf": "/react-portfolio/static/media/Salem-Heritage-Day-broch.886297529f74de586ac2.pdf",
     "static/media/Salem-brochure.pdf": "/react-portfolio/static/media/Salem-brochure.8d12cb92c5b6f5c58012.pdf",
     "static/media/googleposts.pdf": "/react-portfolio/static/media/googleposts.8b078a9c231f185da200.pdf",
     "static/media/warehouse.png": "/react-portfolio/static/media/warehouse.6361f5e91a2ef8c69937.png",
+    "static/media/inspirations-screenshot.png": "/react-portfolio/static/media/inspirations-screenshot.709c08f58914c9866f45.png",
     "static/media/The-Venue.png": "/react-portfolio/static/media/The-Venue.66e22187fcf81f618787.png",
     "static/media/temo.png": "/react-portfolio/static/media/temo.20434364d38dcce7d3d1.png",
     "static/media/boat-show-sail.pdf": "/react-portfolio/static/media/boat-show-sail.36f287745a59f686c412.pdf",
@@ -29,12 +30,12 @@
     "static/media/weather-app.png": "/react-portfolio/static/media/weather-app.b3b7b397618c7c9aa15b.png",
     "static/media/jsquiz.png": "/react-portfolio/static/media/jsquiz.390765643f88615eb22e.png",
     "index.html": "/react-portfolio/index.html",
-    "main.3f24f77f.css.map": "/react-portfolio/static/css/main.3f24f77f.css.map",
-    "main.eaf6f36d.js.map": "/react-portfolio/static/js/main.eaf6f36d.js.map",
+    "main.ba079bf3.css.map": "/react-portfolio/static/css/main.ba079bf3.css.map",
+    "main.d6613b74.js.map": "/react-portfolio/static/js/main.d6613b74.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f24f77f.css",
-    "static/js/main.eaf6f36d.js"
+    "static/css/main.ba079bf3.css",
+    "static/js/main.d6613b74.js"
   ]
 }
