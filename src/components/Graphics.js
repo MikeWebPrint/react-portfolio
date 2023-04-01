@@ -1,8 +1,8 @@
 import React from 'react';
 import PortfolioCard from './PortfolioCard';
 import MemDaySale from '../images/web-email-graphics/Mem-Day-Sale.pdf';
-import BoatShowPower from '../images/web-email-graphics/boat-show-power.pdf';
-import BoatShowSail from '../images/web-email-graphics/boat-show-sail.pdf';
+import BoatShowPower from '../images/web-email-graphics/boat-show-power-email.png';
+import BoatShowSail from '../images/web-email-graphics/boat-show-sail-email.png';
 import Banners from '../images/web-email-graphics/googleposts.pdf'
 let graphicsCards = [
   {
@@ -13,12 +13,12 @@ let graphicsCards = [
   {
     id: "boat-show-power",
     url: BoatShowPower,
-    caption: "Boat Show Email and Web Campaign - Power Boats (pdf)"
+    caption: "Boat Show Email and Web Campaign - Power Boats"
   },
   {
     id: "boat-show-sail",
     url: BoatShowSail,
-    caption: "Boat Show Email and Web Campaign - Sail Boats (pdf)"
+    caption: "Boat Show Email and Web Campaign - Sail Boats"
   },
   {
     id: "rotators",

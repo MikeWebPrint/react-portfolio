@@ -335,6 +335,9 @@ section.portfolio .card-row {
 #temo {
   background-image: url('./images/webdev/temo.png');
 }
+#deflanding {
+  background-image: url('./images/webdev/landing-pages.png');
+}
 #warehouse {
   background-image: url('./images/webdev/warehouse.png');
 }
@@ -377,7 +380,9 @@ section.portfolio .card-row {
 #inspirations {
   background-image: url("./images/webdev/inspirations-screenshot.png")
 }
-
+#scmc {
+  background-image: url("./images/print-graphics/SCMC-brochure-front.jpg")
+}
 /* I created this page desktop-first, but responsive, and this media query applies different styles to certain elements to make the layout look good at smaller screen widths. */
 @media screen and (max-width: 700px) {
   /* header and nav changes flex direction and collapses to column */

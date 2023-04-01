@@ -8,7 +8,7 @@ const botpoison = new Botpoison({
 });
 
 function ContactForm() {
-  // Here we set two state variables for firstName and lastName using `useState`
+  // Here we set two state variables for inputs using `useState`
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -64,7 +64,7 @@ function ContactForm() {
     setName('');
     setEmail('');
     setMessage('');
-    setErrorMessage('Form Submitted');
+    setErrorMessage('Thank you for contacting me!');
   };
 
   return (
@@ -73,15 +73,7 @@ function ContactForm() {
         Find Me Here:
       </h3>
       <section id="contact">
-    {/* <h3>Contact Me</h3> */}
     <nav>
-    {/* <ul>
-        <li>Github: <a href="https://github.com/MikeWebPrint" target="_blank" rel="noreferrer">github.com/MikeWebPrint</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/mike-johnson-25b08836/" target="_blank" rel="noreferrer">mike-johnson-25b08836</a></li>
-        <li><a href="https://painted-temple-59f.notion.site/Resume-67dc4fd6d2af4e4c988a9541d12dbb86" target="_blank" rel="noreferrer">View Current Resume</a></li>
-        <li>Email: <a href="mailto:mikewebprint@gmail.com">MikeWebPrint@gmail.com</a></li>
-        <li>Phone: <a href="tel:18603815470">860.381.5470</a></li>
-      </ul> */}
         <p>Github: <a href="https://github.com/MikeWebPrint" target="_blank" rel="noreferrer">github.com/MikeWebPrint</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/mike-johnson-25b08836/" target="_blank" rel="noreferrer">mike-johnson-25b08836</a></p>
         <p><a href="https://painted-temple-59f.notion.site/Resume-67dc4fd6d2af4e4c988a9541d12dbb86" target="_blank" rel="noreferrer">View Current Resume</a></p>

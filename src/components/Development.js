@@ -1,5 +1,6 @@
 import React from 'react';
 import PortfolioCard from './PortfolioCard'
+import deflanding from '../images/webdev/Defender-Landing-Pages.pdf'
 let developmentCards = [
   {
     id: "inspirations",
@@ -27,9 +28,9 @@ let developmentCards = [
     caption: "Weather Dashboard / JS, APIs, Bootstrap"
   },
   {
-    id: "temo",
-    url: "https://www.defender.com/temo.jsp",
-    caption: "Brand Landing Page / Bootstrap"
+    id: "deflanding",
+    url: deflanding,
+    caption: "Brand Landing Pages / Magento"
   },
   {
     id: "cbd",

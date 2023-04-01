@@ -2,6 +2,7 @@ import React from 'react';
 import PortfolioCard from './PortfolioCard'
 import Salembrochure from '../images/print-graphics/Salem-brochure.pdf'
 import Salemheritage from '../images/print-graphics/Salem-Heritage-Day-broch.pdf'
+import scmc from '../images/print-graphics/SCMC-brochure.pdf'
 import starbrite from '../images/print-graphics/Def-SLS22-sponsorbanners-starbrite.jpg'
 import tohatsu from '../images/print-graphics/Def-SLS22-sponsorbanners-tohatsu.jpg'
 let printCards = [
@@ -9,6 +10,11 @@ let printCards = [
     id: "SalemTour",
     url: Salembrochure,
     caption: "Historical Tourism Brochure, Town of Salem, CT (pdf)"
+  },
+  {
+    id: "scmc",
+    url: scmc,
+    caption: "Brochure, Sisters of Charity of Our Lady, Mother of the Church (pdf)"
   },
   {
     id: "SalemHeritage",
