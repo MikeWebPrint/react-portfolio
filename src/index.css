@@ -201,11 +201,7 @@ main {
   /* text-align: left; */
 
 }
-.form {
-  /* display: flex;
-  flex-wrap: wrap; */
-  
-}
+
 /* Following styles impose my will on heading and paragraph type */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .75em;
@@ -251,11 +247,26 @@ section.portfolio .card-row {
   gap: 1.5rem;
 }
 /* Common attributes for portfolio cards */
+.card-holder {
+  flex: 1 0 40%;
+  /* height: 35vh; */
+  /* overflow-wrap: break-word; */
+
+}
+.card-holder:first-child {
+  flex-basis: 100%;
+}
+.card-holder:nth-child(n+2) {
+  max-width: 60%;
+}
+.card-holder p {
+  flex-basis: 100%;
+}
 .card {
   border: solid var(--light-gray) 1px;
   border: solid var(--primary-tint3) 1px;
   border-radius: 2px;
-  flex: 1 0 40%;
+  flex: 1 1 100%;
   height: 30vh;
   background-color: var(--primary);
   background-position: top center;
@@ -263,6 +274,10 @@ section.portfolio .card-row {
   background-repeat: no-repeat;
   position: relative;
   text-align: left;
+  display: inline-block;
+}
+.card img {
+  /* min-width: 100%; */
 }
 /* color overlay on cards */
 .card::before {
@@ -286,15 +301,15 @@ section.portfolio .card-row {
   transition: all .2s linear;
 }
 /* Make the first portfolio item larger than the others */
-.card:first-child {
+/* .card:first-child {
   flex-basis: 100%;
 }
 .card:nth-child(n+2) {
-  max-width: 50%;
-}
+  max-width: 100%;
+} */
 /* Card caption styles */
 .card-caption {
-  content: attr(caption);
+  /* content: attr(caption); */
   position: relative;
   display: inline-block;
   top: 19vh;
@@ -323,9 +338,6 @@ section.portfolio .card-row {
   max-width: 60px;  
 }
 /* Portfolio cards background images*/
-#Horiseon {
-  background-image: url("./images/webdev/Horiseon-SEO-Services-Home.png");
-}
 #cbd {
   background-image: url("./images/webdev/QSCBD-Home.png");
 }
