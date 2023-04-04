@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.84069880.css",
-    "main.js": "/react-portfolio/static/js/main.4b92182b.js",
+    "main.css": "/react-portfolio/static/css/main.f1b284d7.css",
+    "main.js": "/react-portfolio/static/js/main.85bd7d77.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/SCMC-brochure.pdf": "/react-portfolio/static/media/SCMC-brochure.6c3fef1e3be5e552474e.pdf",
     "static/media/Defender-Landing-Pages.pdf": "/react-portfolio/static/media/Defender-Landing-Pages.41039e5e47c3cdc2e3f6.pdf",
@@ -16,7 +16,6 @@
     "static/media/inspirations-screenshot.png": "/react-portfolio/static/media/inspirations-screenshot.709c08f58914c9866f45.png",
     "static/media/The-Venue.png": "/react-portfolio/static/media/The-Venue.66e22187fcf81f618787.png",
     "static/media/temo.png": "/react-portfolio/static/media/temo.20434364d38dcce7d3d1.png",
-    "static/media/Horiseon-SEO-Services-Home.png": "/react-portfolio/static/media/Horiseon-SEO-Services-Home.7e83925a1bae342d6a26.png",
     "static/media/FilmFindrapp.jpg": "/react-portfolio/static/media/FilmFindrapp.b2ecd6b2f8b70605e79a.jpg",
     "static/media/QSCBD-Home.png": "/react-portfolio/static/media/QSCBD-Home.d6ea87bf65e42ff54f82.png",
     "static/media/acupuncture-Home.png": "/react-portfolio/static/media/acupuncture-Home.d856c51c166b2f374cf3.png",
@@ -34,12 +33,12 @@
     "static/media/weather-app.png": "/react-portfolio/static/media/weather-app.b3b7b397618c7c9aa15b.png",
     "static/media/jsquiz.png": "/react-portfolio/static/media/jsquiz.390765643f88615eb22e.png",
     "index.html": "/react-portfolio/index.html",
-    "main.84069880.css.map": "/react-portfolio/static/css/main.84069880.css.map",
-    "main.4b92182b.js.map": "/react-portfolio/static/js/main.4b92182b.js.map",
+    "main.f1b284d7.css.map": "/react-portfolio/static/css/main.f1b284d7.css.map",
+    "main.85bd7d77.js.map": "/react-portfolio/static/js/main.85bd7d77.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84069880.css",
-    "static/js/main.4b92182b.js"
+    "static/css/main.f1b284d7.css",
+    "static/js/main.85bd7d77.js"
   ]
 }
