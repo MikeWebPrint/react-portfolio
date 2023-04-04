@@ -8,22 +8,22 @@ let graphicsCards = [
   {
     id: "MemDay",
     url: MemDaySale,
-    caption: "Memorial Day Sale Catalog, Defender Industries, Inc. (pdf)"
+    title: "Memorial Day Sale Catalog, Defender Industries, Inc. (pdf)"
   },
   {
     id: "boat-show-power",
     url: BoatShowPower,
-    caption: "Boat Show Email and Web Campaign - Power Boats"
+    title: "Boat Show Email and Web Campaign - Power Boats"
   },
   {
     id: "boat-show-sail",
     url: BoatShowSail,
-    caption: "Boat Show Email and Web Campaign - Sail Boats"
+    title: "Boat Show Email and Web Campaign - Sail Boats"
   },
   {
     id: "rotators",
     url: Banners,
-    caption: "Promotional Banners (pdf)"
+    title: "Promotional Banners (pdf)"
   },
 ];
 
@@ -34,8 +34,8 @@ const Graphics = () => {
 </h3>
 <div className="card-row">
   {
-        graphicsCards.map(({ id, url, caption }) => {
-          return <PortfolioCard key={id} id={id} url={url} caption={caption} />
+        graphicsCards.map(({ id, url, title }) => {
+          return <PortfolioCard key={id} id={id} url={url} title={title} />
         })
       }
 </div>

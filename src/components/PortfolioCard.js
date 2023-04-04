@@ -1,6 +1,5 @@
 import React from "react";
-
-const PortfolioCard = ({ id, url, caption, title, repo }) => {
+const PortfolioCard = ({ id, url, caption, title, repo, examples }) => {
   return (
 
       <div className="card-holder" key={id}>
@@ -9,7 +8,11 @@ const PortfolioCard = ({ id, url, caption, title, repo }) => {
       </a>
       <p>{caption}</p>
 
-        {repo && <a href={repo} target="_blank" rel="noreferrer">Github</a>}
+        {repo && <a href={repo} target="_blank" rel="noreferrer">View code</a>}
+        {/* {examples && {...examples.map(example => (
+          <a href={example} key={example} target="_blank" rel="noreferrer">{example}</a>
+        ))}
+        } */}
 
       </div>
 

@@ -43,7 +43,8 @@ let developmentCards = [
     id: "deflanding",
     url: deflanding,
     caption: "",
-    title: "Brand Landing Pages / Magento"
+    title: "Brand Landing Pages / Magento",
+    examples: ['https://thenorthstargroupinc.com/',]
   },
   {
     id: "cbd",
@@ -58,8 +59,8 @@ const Development = () => {
     <h3>Web Development</h3>
     <div className="card-row">
       {
-        developmentCards.map(({ id, url, caption, title, repo }) => {
-          return <PortfolioCard key={id} id={id} url={url} caption={caption} title={title} repo={repo} />
+        developmentCards.map(({ id, url, caption, title, repo, examples }) => {
+          return <PortfolioCard key={id} id={id} url={url} caption={caption} title={title} repo={repo} examples={[examples]}/>
         })
       }
     </div>

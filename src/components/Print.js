@@ -9,27 +9,27 @@ let printCards = [
   {
     id: "SalemTour",
     url: Salembrochure,
-    caption: "Historical Tourism Brochure, Town of Salem, CT (pdf)"
+    title: "Historical Tourism Brochure, Town of Salem, CT (pdf)"
   },
   {
     id: "scmc",
     url: scmc,
-    caption: "Brochure, Sisters of Charity of Our Lady, Mother of the Church (pdf)"
+    title: "Brochure, Sisters of Charity of Our Lady, Mother of the Church (pdf)"
   },
   {
     id: "SalemHeritage",
     url: Salemheritage,
-    caption: "Event Brochure, Salem Bicentennial Heritage Day (pdf)"
+    title: "Event Brochure, Salem Bicentennial Heritage Day (pdf)"
   },
   {
     id: "starbrite",
     url: starbrite,
-    caption: "Event Sponsor Banner - Star brite"
+    title: "Event Sponsor Banner - Star brite"
   },
   {
     id: "tohatsu",
     url: tohatsu,
-    caption: "Event Sponsor Banner - Tohatsu"
+    title: "Event Sponsor Banner - Tohatsu"
   },
 ]
 const Print = () => {
@@ -39,8 +39,8 @@ const Print = () => {
     </h3>
     <div className="card-row">
       {
-        printCards.map(({ id, url, caption }) => {
-          return <PortfolioCard key={id} id={id} url={url} caption={caption} />
+        printCards.map(({ id, url, title }) => {
+          return <PortfolioCard key={id} id={id} url={url} title={title} />
         })
       }
     </div>
